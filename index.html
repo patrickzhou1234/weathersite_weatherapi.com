@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link id="favicon" rel="shortcut icon" href="" type="image/x-icon">
+    <script src="jquery-3.2.1.js"></script>
+    <title>Weather</title>
+</head>
+<body>
+    <div id="fulloc"><span id="location"></span> (<span id="time"></span>)</div>
+    <div id="temp"></div>
+    <div id="shortcast"></div>
+    <img id="weatherimg" src="">
+    <div id="detailpanel">
+        <span id="windspeedcont" class="detailsec">Wind Speed: <span id="windspeed"></span></span>
+        <br>
+        <span id="uvcont" class="detailsec">Current UV Index: <span id="uvind"></span></span>
+        <br>
+        <span id="humiditycont" class="detailsec">Humidity: <span id="humidity"></span></span>
+        <br>
+        <span id="feelslikecont" class="detailsec">Feels Like: <span id="feels_like"></span></span>
+        <br>
+        <span id="precipcont" class="detailsec">Precipitation: <span id="precipitation"></span></span>
+        <br>
+        <span id="pressurecont" class="detailsec">Pressure: <span id="pressure"></span></span>
+    </div>
+    <div id="credits">Data fetched from <a id="weathergov" target="_blank" href="https://www.weatherapi.com/">weatherapi.com</a></div>
+    <script src="script.js"></script>
+</body>
+</html>
