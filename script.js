@@ -38,7 +38,7 @@ $.getJSON('http://api.weatherapi.com/v1/current.json?key=7594468ff47c4645a6c2346
         body.style.backgroundColor = "gray";
         weatherimg.src = "cloudy.png";
         favicon.href = "cloudy.png";
-    } else if (data["current"]["condition"]["text"]=="Mostly Clear") {
+    } else if (data["current"]["condition"]["text"]=="Mostly Clear" || data["current"]["condition"]["text"]=="Clear") {
         body.style.backgroundColor = "#1e2c4b";
         weatherimg.src = "moon.png";
         favicon.href = "moon.png";
@@ -49,7 +49,7 @@ $.getJSON('http://api.weatherapi.com/v1/current.json?key=7594468ff47c4645a6c2346
     humidity.innerHTML = data["current"]["humidity"];
     feels_like.innerHTML = data["current"]["feelslike_f"]+"° F";
     precip.innerHTML = data["current"]["precip_in"]+" in.";
-    pressure.innerHTML = data["current"]["pressure_in"]+" in."
+    pressure.innerHTML = data["current"]["pressure_in"]+" in.";
 });
 
 setInterval(() => {
